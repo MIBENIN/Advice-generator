@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body{
+    width:100%;
+    min-height: 100vh;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3em;
+}
+img{
+    max-width: 100%;
+}
+.advice-box{
+    width:95%;
+    max-width: 380px;
+    background-color: var(--Dark-Grayish-Blue);
+    padding:2em 1em;
+    text-align: center;
+    position: relative;
+    border-radius: 1em;
+}
+.title{
+    color:var(--Neon-Green);
+    font-size: .6rem;
+    letter-spacing: .3em;
+}
+
+#advice{
+    color:var(--Light-Cyan);
+    font-size: 1.2rem;
+    margin:1em 0;
+    line-height: 1.5;
+}
+
+.divider{
+    margin-bottom: 1em;
+}
+#generateBtn{
+    background-color: var(--Neon-Green);
+    width:3rem;
+    height:3rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom:-1.5em;
+    right:50%;
+    transform: translateX(50%);
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#generateBtn:hover{
+    box-shadow: 0 0 50px 5px var(--Neon-Green);
+}
+.generate-img{
+    width:1.2rem;
+    height:1.2rem;
+}
+@media screen and (min-width:600px){
+    .advice-box{
+        padding:2em;
+    }
+}
